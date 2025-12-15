@@ -10,8 +10,8 @@ interface ModelCardProps {
 const ModelCard: React.FC<ModelCardProps> = ({ model, onView, onDelete }) => {
   const getScoreColor = (score: number | null | undefined): string => {
     if (score == null) return 'text-gray-400';
-    if (score >= 0.7) return 'text-green-600';
-    if (score >= 0.4) return 'text-yellow-600';
+    if (score >= 0.7) return 'text-green-700';
+    if (score >= 0.4) return 'text-yellow-700';
     return 'text-red-600';
   };
 
